@@ -12,16 +12,16 @@ public class MainMenu {
 	        	user.prouser();
 	            break;
 	        case 2:
-	        	ProgramBarang barang = new ProgramBarang();
-	        	barang.probarang();
+//	        	ProgramBarang barang = new ProgramBarang();
+//	        	barang.probarang();
 	            break;
 	        case 3:
-	        	ProgramRestock stok = new ProgramRestock();
-	        	stok.prorestock();
+//	        	ProgramRestock stok = new ProgramRestock();
+//	        	stok.prorestock();
 	            break;
 	        case 4:
-	        	Transaksi transaksi = new Transaksi();
-	        	transaksi.Menu();
+//	        	Transaksi transaksi = new Transaksi();
+//	        	transaksi.Menu();
 	            break;
 	        case 5:
 	            break;
