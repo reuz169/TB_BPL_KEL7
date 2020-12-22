@@ -16,8 +16,8 @@ public class MainMenu {
       	        barang.probarang();
 	            break;
 	        case 3:
-//	        	ProgramRestock stok = new ProgramRestock();
-//	        	stok.prorestock();
+	        	ProgramRestock stok = new ProgramRestock();
+	        	ProgramRestock.prorestock();
 	            break;
 	        case 4:
 //	        	Transaksi transaksi = new Transaksi();
@@ -25,11 +25,11 @@ public class MainMenu {
 	            break;
 	        case 5:
 	            break;
-	        case 6:
+	        case 6:Login.login();
 	            break;
 	        default:
 				System.out.println("Pilihan Anda Tidak Tersedia");
-	    }while (menuPilihan!=6);
+	    }while (menuPilihan<1 || menuPilihan>6);
 	}
 	public static Scanner input =new Scanner(System.in);
 	
