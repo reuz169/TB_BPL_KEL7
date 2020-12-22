@@ -313,7 +313,7 @@ public class Transaksi {
 						 rsJUMLAH= rs.getInt("jumlah");
 						 rsHARGA = rs.getInt("harga");
 						System.out.println("|	"+"["+i+"]"+"	|	"+rsID+"	|	"+rsNORESI+"	|	"+rsSKU+"	|	"+rsJUMLAH+"	|	"+rsHARGA+"	|");
-						System.out.println(" _______________________________________________________________________________________________");
+						System.out.println("_______________________________________________________________________________________________");
 						i++;
 						}
 					}	
