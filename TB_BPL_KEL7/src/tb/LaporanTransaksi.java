@@ -188,14 +188,11 @@ public class LaporanTransaksi {
 								i++;
 								 
 							}
-						 
-						 
 					}
 					
 					totPenjualan+=jumlah;
 					totKeuntunganK+=hargaK;
 					totKeuntunganB+=hargaB;
-					
 				}
 		}
 		System.out.println("Total Penjualan  	: " + totPenjualan);
