@@ -13,13 +13,13 @@ import java.util.Scanner;
 public class Login {
 	static Connection conn;
 	
-	static String kataAcak="";//untuk reset password
-	static String USERR=null, PASS=null;//untuk menyimpan nilai username dan password yg diinputkan
-	static String rsUSERNAME=null, rsPASSWORD=null;//untuk menyimpan nilai username dan password di db
+	static String kataAcak="";
+	static String USERR=null, PASS=null;
+	static String rsUSERNAME=null, rsPASSWORD=null;
 	
 	public static void login() throws SQLException {
 			
-		Scanner input = new Scanner (System.in);//manipulasi objek scanner
+		Scanner input = new Scanner (System.in);
 		conn = Koneksi.koneksiSQL();
 		Statement stmt = conn.createStatement();
 		

@@ -12,8 +12,8 @@ public class MainMenu {
 	        	user.prouser();
 	            break;
 	        case 2:
-//	        	ProgramBarang barang = new ProgramBarang();
-//	        	barang.probarang();
+       	        ProgramBarang barang = new ProgramBarang();
+      	        barang.probarang();
 	            break;
 	        case 3:
 //	        	ProgramRestock stok = new ProgramRestock();
