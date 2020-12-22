@@ -12,7 +12,6 @@ public class Transaksi {
 	
 	static Statement stmt;
 	
-	
 	static Scanner sc = new Scanner(System.in);
 	User userInput= new User();
 	

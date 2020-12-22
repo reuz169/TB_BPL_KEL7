@@ -202,48 +202,5 @@ public class LaporanTransaksi {
 		System.out.println("Total Keuntungan Kotor 	: Rp." + totKeuntunganK);
 		System.out.println("Total Keuntungan Bersih : Rp." + totKeuntunganB);
 	}
-	
-//	public class TampilkanBarang
-//	{
-//		String nama;
-//		Integer jumlah;
-//		Integer harga;
-//		
-//		public TampilkanBarang()
-//		{
-//			
-//		}
-//		
-//		public TampilkanBarang(String nama, Integer jumlah, Integer harga)
-//		{
-//			this.nama=nama;
-//			this.jumlah=jumlah;
-//			this.harga=harga;
-//		}
-//		
-//	}
-//	
-//	public Stack<TampilkanBarang> lihat()
-//	{
-//		Connection c= Koneksi.koneksiSQL();
-//		Stack<TampilkanBarang> listBarang = new Stack<>;
-//		
-//		try
-//		{
-//			String query="";
-//			stmt=c.createStatement();
-//			ResultSet rs2 = stmt2.executeQuery("SELECT * FROM barang WHERE sku= '" + sku + "';");
-//			 while(rs2.next()) 
-//				{ //Perbaris
-//					 namaP = rs2.getString("nama"); 
-//					 harga_jual = rs2.getInt("harga_jual");
-//					 harga_beli = rs2.getInt("harga_beli");
-//					 hargaB= harga_jual-harga_beli;
-//		}
-//		
-//		
-//		return listBarang;
-//		
-//	}
 
 } 
