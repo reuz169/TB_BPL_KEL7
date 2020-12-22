@@ -31,7 +31,7 @@ public class ProgramBarang{
 	          System.out.println("..................................................................................................");
 	          System.out.println("\n\t\t\t\t\t[ 5 ] Cari Barang           ");
 	          System.out.println("..................................................................................................");
-	          System.out.println("\n\t\t\t\t\t[ 6 ] Keluar               \n");
+	          System.out.println("\n\t\t\t\t\t[ 0 ] Keluar               \n");
 	          System.out.println("..................................................................................................");
 	          System.out.println("==================================================================================================");
 	          System.out.print  ("\t\t\t\tInput No [ 1 / 2 / 3 / 4 / 5 / 6 ]  ");
@@ -71,7 +71,8 @@ public class ProgramBarang{
 	           break;
 	                    
 	           
-	           case 6:
+	           case 0:
+	           MainMenu.mainMenu();
 	           break;
 	           default:
 	           
@@ -81,7 +82,7 @@ public class ProgramBarang{
 	                
 	}
 	            
-    } while (option != 0);
+    } while (option >= 0);
 	         
 	    }
 	    
@@ -144,9 +145,7 @@ private static void tambahKoleksi() {
     System.out.println("                                       Tambah Data Barang                                          ");
     System.out.println("**************************************************************************************************");
 	
-	    	
-	        
-	    if(manageBarang.tambahData()>0) {
+	   if(manageBarang.tambahData()>0) {
 	        
 	    	System.out.println("===================================================================================================");
 	        System.out.println("----------------------------------->> Data Berhasil Ditambahkan <<---------------------------------");

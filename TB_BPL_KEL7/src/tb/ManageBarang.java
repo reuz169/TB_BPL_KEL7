@@ -80,11 +80,14 @@ public int tambahData() {
        
         
         if(stok<0 && hBeli<0 && hJual<0) {
+        System.out.println("\n--------------------------------------------------------------------------------------------------");
         System.out.println("---------------------------------->> Inputkan Angka Dengan Benar <<--------------------------------");
         tambahData() ;
         }
         	else if (hJual<hBeli) { 
-        		System.out.println("---------------->> Tidak Valid !! Harga Jual harus lebih Besar dari harga Beli <<------------------");	
+        		System.out.println("\n--------------------------------------------------------------------------------------------------");
+        		System.out.println("---------------->> Tidak Valid !! Harga Jual harus lebih Besar dari harga Beli <<-----------------");	
+        		System.out.println("--------------------------------------------------------------------------------------------------");
         		tambahData() ; 
         	}
         	else {
@@ -181,12 +184,13 @@ public int edit() {
         Integer hJual = Integer.parseInt(scanner.nextLine());
                 
     if(hBeli<0 && hJual<0) {
-                	
+    	System.out.println("\n--------------------------------------------------------------------------------------------------");       	
     	System.out.println("---------------------------------->> Inputkan Angka Dengan Benar <<--------------------------------");
         edit() ;
         }
     
-    else if (hJual<hBeli) { 
+    else if (hJual<hBeli) {
+    	System.out.println("\n--------------------------------------------------------------------------------------------------");
     	System.out.println("----------------------->> Harga Jual harus lebih Besar dari harga Beli <<--------------------------");
        
         edit() ; 
@@ -202,13 +206,14 @@ public int edit() {
                 
          result = statement.executeUpdate();
     }
-    else
-    	  
-        { System.out.println("---------------------------------->> Inputkan Angka Dengan Benar <<--------------------------------");
+    else{ 
+    	System.out.println("\n--------------------------------------------------------------------------------------------------");
+    	System.out.println("---------------------------------->> Inputkan Angka Dengan Benar <<--------------------------------");
           
     }
          }
     else {
+    	  System.out.println("\n--------------------------------------------------------------------------------------------------");
 	      System.out.println("-------------------------------------->> Data Tidak Tersedia <<------------------------------------");
             
     }
@@ -235,6 +240,7 @@ public int hapus() {
           result = statement.executeUpdate();
             
     }catch(SQLException e){
+    	  System.out.println("\n--------------------------------------------------------------------------------------------------");
     	  System.out.println("-------------------------------------->> Data Gagal Dihapus <<-------------------------------------");
         
           }

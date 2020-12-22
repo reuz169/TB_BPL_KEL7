@@ -39,7 +39,7 @@ public class MainMenu {
 	    while(loopX == 0) 
 	    {
 	    System.out.println("\n|===============================================|");
-		System.out.println("|\t\t\tMENU\t\t\t|");
+		System.out.println("|\t\t       M E N U                  |");
 		System.out.println("|===============================================|");
 		System.out.println("1. PENGELOLAAN USER");
 		System.out.println("2. PENGELOLAAN DATA MASTER BARANG");

@@ -19,6 +19,10 @@ public class Login {
 	
 	public static void login() throws SQLException {
 			
+		System.out.println("======================================================================================");
+        System.out.println("||>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> TB BPL KELOMPOK 7 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<||");
+        System.out.println("======================================================================================");
+        
 		Scanner input = new Scanner (System.in);
 		conn = Koneksi.koneksiSQL();
 		Statement stmt = conn.createStatement();
@@ -29,8 +33,7 @@ public class Login {
 		
 		while(true && salahMaksimal<3) 
 		{
-		System.out.println("=========================");
-		System.out.println("=========LOG IN==========");
+		System.out.println("\n||>>>>> L O G I N <<<<<||");
 		System.out.println("=========================");
 		System.out.print("MASUKKAN USERNAME: ");
 		USERR = input.nextLine();
@@ -51,8 +54,9 @@ public class Login {
 			{
 				if(PASS.equals(rsPASSWORD))
 				{
-					
-				System.out.println(">>> Berhasil Log in <<<");
+				System.out.println("===========================");	
+				System.out.println("||>>> Berhasil Log in <<<||");
+				System.out.println("===========================");
 				String sql2 = "UPDATE user SET login_terakhir=? WHERE username=?";
 				PreparedStatement pstT = conn.prepareStatement(sql2);
 				Timestamp timestamp = new Timestamp(new Date().getTime());
@@ -93,12 +97,18 @@ public class Login {
 							update.setString(1, kataAcak);
 							update.setString(2, USERR);
 							update.executeUpdate();
-							System.out.println("PASSWORD TELAH DIRESET.\n");
+							System.out.println("============================");
+							System.out.println("||PASSWORD TELAH DIRESET||\n");
+							System.out.println("============================");
 						}
 						catch (Exception e) 
 						{
-							System.out.println("USERNAME TIDAK ADA");
-							System.out.println("PASSWORD GAGAL DIRESET");
+							System.out.println("========================");
+							System.out.println("|| USERNAME TIDAK ADA ||");
+							System.out.println("========================");
+							System.out.println("============================");
+							System.out.println("|| PASSWORD GAGAL DIRESET ||");
+							System.out.println("============================");
 						}
 						
 					}
@@ -112,7 +122,9 @@ public class Login {
 		
 		catch(SQLException e) 
 		{
-		System.out.println("KONEKSI DATABASE GAGAL");
+		System.out.println("==========================");
+		System.out.println("||KONEKSI DATABASE GAGAL||");
+		System.out.println("==========================");
 		e.printStackTrace();
 		}
 		
