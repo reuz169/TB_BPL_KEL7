@@ -7,7 +7,7 @@ public class Koneksi {
 
 	public static Connection koneksiSQL() throws SQLException{
 	try {
-		String url = "jdbc:mysql://localhost/tbbpl?serverTimezone=Asia/Jakarta";
+		String url = "jdbc:mysql://localhost/tb_bpl?serverTimezone=Asia/Jakarta";
 		String user = "root";
 		String pass = "";
 		koneksi = DriverManager.getConnection(url, user, pass);
